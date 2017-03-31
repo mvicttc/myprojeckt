@@ -1,113 +1,38 @@
-.toolbar li {
-	display: inline;
-	background-color: #d3dce2;
-	border: 1px solid;
-	margin: 4px;
-	padding: 1.6em;
-	position: relative;
-	left: 700px;
-	bottom: 15px;
+body {
+    max-width: 1500px;
+    margin: 0 auto;
+}
+
+header {
+    background-color: #92b6ef;
+    height: 75px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right:0px;
+}
+
+nav li {
+    display: inline-block;
+    margin: 15px;
+    padding: 5px;
+    font-weight: bold;
+    font-size: larger;
+}
+
+nav {
+    position: absolute;
+    margin-left: 650px;
+    margin-top: -75px;
+}
+
+
+
+nav li a:hover {
+    color:red;
+
 }
 
 main {
-	text-align: center;
+    text-align: center;
 }
-.p1 {
-    width:150px; 
-    height:150px; 
-    float:left; 
-    margin-left:150px;
-    padding-top:60px;
-}
-
-.p2 {
-	width: 170px;
-	height: 150px;
-	float: left;
-	margin-left: 130px;
-	padding-top: 55px;
-}
-.p3 {
-	width: 200px;
-	height: 150px;
-	float: right;
-	margin-right: 340px;
-	padding-top: 50px;
-}
-.p4 {
-	width: 150px;
-	height: 150px;
-	float: right;
-	margin-top: -150px;
-	padding-right: 90px;
-}
- 
-.p5 {
-	width: 165px;
-	height: 150px;
-	float: left;
-	margin-left: -450px;
-	padding-top: 240px;
-}
-
-.p6 {
-	width: 250px;
-	height: 200px;
-	float: left;
-	margin-left: -200px;
-	padding-top: 240px;
-}
-.p7 {
-	width: 180px;
-	height: 150px;
-	float: left;
-	margin-left: 110px;
-	padding-top: 240px;
-}
-.p8 {
-	width:150px;
-	height:150px;
-	float: left;
-	margin-left: 100px;
-	padding-top: 230px;
-}
-
-
-
-p:hover {
-	color: red;
-}
-
-#about-me {
-border-top-style: solid;
-line-height: 1.5;
-padding: 30px;
-
-}
-
-#serv {
-border-top-style: solid;
-line-height: 1.5;
-padding: 30px;
-
-}
-
-#work {
-border-top-style: solid;
-line-height: 1.5;
-padding: 30px;
-
-}
-
-#contact {
-border-top-style: solid;
-line-height: 1.5;
-padding: 30px;
-
-}
-
-body {
-	background-color: #64b6b7;
-}
-
-
