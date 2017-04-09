@@ -3,43 +3,57 @@ body {
     margin: 0 auto;
     padding: 25px;
     font-size: 1.1em;
+
 }
 html {
-    background-image: url('https://elitefon.ru/images/201211/elitefon.ru_22236.jpg');
+    background-image: url('http://hswatch.ru/wp-content/uploads/2015/04/%D1%84%D0%BE%D0%BD-%D1%81%D0%B0%D0%B9%D1%82%D0%B0.jpg');
+    background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    background-size: cover;
 }
 
 
 
-nav ul li:hover {
-    color: red;
+
+a {
+    color: #d9e557;
+    text-decoration: none;
 }
 
-nav li {
-    display: inline-block;
-    position: relative;
-    left: 75px;
-    padding: 15px;
-    margin: 20px;
+li {
+    list-style-type: none;
+    
+}
+
+a:hover {
+    color: #e52727;
+}
+
+.flex-container-nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
     font-size: 1.7em;
     font-weight: bolder;
+    
+    
+}
+
+.flex-elements {
+    margin:5%;
 }
 
 
  
 .title {
     font-size: 1.3em;
-    position: relative;
-    left: 70px;
+    text-align: center;
 }
 
 img {
-    position: relative;
     width: 270px;
     float: right;
-    left: -40px;
+    max-width: 100%;
     margin-top: 25px;
 }
 
@@ -73,42 +87,36 @@ h3 {
 
 iframe {
     float: right;
-    width: 375px;
+    width: 300px;
     height: 180px;
 }
 
 form {
-    position: relative;
     margin-top: 40px;
-    margin-left: 300px;
-    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSh-jgUV93GXxfy9p09MSbZgGxsp33vt3sTDPm64c_DwX18vz-l3g');
-    background-repeat: repeat;
-    background-size: cover;
-    width: 350px;
-    height: 350px;
+    
+    width: 500px;
+    height: 500px;
     text-align: center;
     border-radius: 15px;
     
 }
 
-form input {
-    margin-top: 25px;
-}
+
 
 input[type="text"],
 input[type="email"],
 textarea[placeholder="Повідомлення"] {
     
-    width: 300px;
-    height: 40px;
+    width: 220px;
+    height: 35px;
     font-size: 18px;
     margin-bottom: 20px;
     border-radius: 6px;
 }
 
 .button input {
-    padding: 13px 20px;
-    margin: 10px 5px 20px 5px;
+    padding: 13px 15px;
+    margin: 5px 0px 20px 0px;
     font-size: 15px;
     border-radius: 15px;
 }
@@ -128,7 +136,40 @@ footer {
     margin-top: 50px;
 }
 
-.forma {
-    margin-top: 120px;
+.list {
+    margin-top: 150px;
 }
 
+.forma {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+@media screen and (max-width: 600px) {
+    .flex-item {
+        width: 100%;
+    }
+    .flex-container-nav {
+       display: flex;
+       flex-direction: column;
+    }
+    img {
+        width: 95%;
+    }
+
+    body {
+         padding: 20px;
+         text-align: center;
+    }
+    
+    form {
+        width: 335px;
+        height: 260px;
+    }
+    iframe {
+        width: 90%;
+        float: none;
+    }
+}
